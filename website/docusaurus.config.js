@@ -367,6 +367,10 @@ const config = {
                 label: 'Privacy policy',
                 href: 'https://policies.google.com/technologies/cookies',
               },
+              {
+                label: 'Cookie policy',
+                href: 'https://www.cookiechoices.org/',
+              },
             ],
           },
         ],
