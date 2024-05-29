@@ -10,6 +10,7 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
+    "test": "npx playwright test",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "archive": "node archive.js"
@@ -33,7 +34,9 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.3.2",
     "@docusaurus/types": "3.3.2",
+    "@playwright/test": "^1.44.1",
     "@swc/core": "1.5.7",
+    "@types/node": "^20.12.12",
     "swc-loader": "0.2.6"
   },
   "browserslist": {
