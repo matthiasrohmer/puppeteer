@@ -12,7 +12,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "archive": "node archive.js"
+    "archive": "node archive.js",
+    "wdio": "wdio run ./wdio.conf.js"
   },
   "dependencies": {
     "@docsearch/react": "3.6.0",
@@ -34,6 +35,11 @@
     "@docusaurus/module-type-aliases": "3.3.2",
     "@docusaurus/types": "3.3.2",
     "@swc/core": "1.5.7",
+    "@wdio/cli": "^8.38.1",
+    "@wdio/local-runner": "^8.38.0",
+    "@wdio/mocha-framework": "^8.38.0",
+    "@wdio/spec-reporter": "^8.38.0",
+    "@wdio/static-server-service": "^8.38.0",
     "swc-loader": "0.2.6"
   },
   "browserslist": {
