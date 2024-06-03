@@ -30,7 +30,6 @@ describe('Tracking', () => {
     expect(cookie).toBeDefined();
 
     await expect(mock).toBeRequested();
-    expect(mock.calls.length).toBeGreaterThan(0);
   });
   it('should send analytics ping on page re-load once cookie banner is accepted and not show it again', async () => {
     const page = new Page();
@@ -40,6 +39,5 @@ describe('Tracking', () => {
 
     const mock = await browser.mock(/google-analytics\.com/g);
     await expect(mock).toBeRequested();
-    expect(mock.calls.length).toBeGreaterThan(0);
   });
 });

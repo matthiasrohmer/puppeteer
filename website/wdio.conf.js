@@ -56,9 +56,21 @@ exports.config = {
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [
+    // {
+    //   webSocketUrl: true,
+    //   browserName: 'chrome',
+    // },
     {
-      browserName: 'chrome',
+    //   webSocketUrl: true,
+    //   'moz:debuggerAddress': true,
+      browserName: 'firefox',
     },
+    // {
+    //   browserName: 'edge',
+    // },
+    // {
+    //   browserName: 'safari',
+    // },
   ],
 
   //
