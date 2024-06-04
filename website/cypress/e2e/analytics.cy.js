@@ -19,6 +19,7 @@ describe('tracking spec', () => {
   it('should send analytics ping on page re-load once cookie banner is accepted and not show it again', () => {
     cy.visit('/');
     cy.get('[aria-label="Accept cookies"]').should('exist');
+    cy.get('[aria-label="Accept cookies"]').click();
     cy.intercept(/google-analytics\.com/g).as('analytics');
     cy.reload();
     cy.wait('@analytics');
